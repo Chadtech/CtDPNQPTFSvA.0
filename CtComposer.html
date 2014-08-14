@@ -1,13 +1,38 @@
 <html>
 	<head>
 		<title>Chadtech v0.5</title>
+		<script src="Noitech.js"></script>
 		<script type="text/javascript">
+
+		//var noitech = document.createElement('script');
+		//noitech.type="text/javascript";
+		//noitech.src = 'Noitech';
+		//document.body.appendChild(noitech);
+
+		function line(voice,notes){
+			this.voice = voice;
+			this.notes = notes;
+		}
+
+		function note(moment,arguments){
+			this.moment = moment;
+			this.arguments = arguments;
+		}
+
+		var generatedTypes = {
+			'sine':makeSine(),
+			'saw':makeSaw(),
+			'triangle':makeTriangle(),
+			'square':makeSquare()
+		}
+
+
 
 		</script>
 	</head>
-	<body onload="draw()" ondragover="onDragOver()" ondrop="fileLoad()" onkeydown="keyEventDown(event); draw()" onmousedown="onMouseDown(event)" onresize="draw()" onkeyup="keyEventUp(event)">
+	<body>
 		<div style="position: absolute; top:0px; left:0px;">
-			<canvas id="Chadtech-v0.5" width="800" height="800" style=" background-color:#000000;"></canvas>
+			<canvas id="CtDPNQPTFSvA" width="800" height="800" style=" background-color:#000000;"></canvas>
 		</div>
 	</body>
 </html>
